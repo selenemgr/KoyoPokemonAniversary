@@ -45,21 +45,21 @@ export default class WorldScene extends Phaser.Scene {
   preload() {
     const n = state.currentArea;
     const cfg = AREA_CONFIG[n];
-    this.load.image(`area-bg-${n}`, `/assets/area-backgrounds/${n}-bg.png`);
-    if (cfg.sprites.includes("koyo")) this.load.image(`koyo-${n}`, `/assets/seyo/${n}-KoyoSprite.png`);
-    if (cfg.sprites.includes("selu")) this.load.image(`selu-${n}`, `/assets/seyo/${n}-SeluSprite.png`);
+    this.load.image(`area-bg-${n}`, `assets/area-backgrounds/${n}-bg.png`);
+    if (cfg.sprites.includes("koyo")) this.load.image(`koyo-${n}`, `assets/seyo/${n}-KoyoSprite.png`);
+    if (cfg.sprites.includes("selu")) this.load.image(`selu-${n}`, `assets/seyo/${n}-SeluSprite.png`);
     if (!this.textures.exists("koyo-player")) {
-      this.load.image("koyo-player", "/assets/seyo/4-KoyoSprite.png");
+      this.load.image("koyo-player", "assets/seyo/4-KoyoSprite.png");
     }
     const badgeFile = BADGE_FILES[n];
     if (badgeFile && !this.textures.exists(`badge-${n}`)) {
-      this.load.image(`badge-${n}`, `/assets/badges/${badgeFile}`);
+      this.load.image(`badge-${n}`, `assets/badges/${badgeFile}`);
     }
     if (!this.cache.audio.exists("music-normal")) {
-      this.load.audio("music-normal", "/assets/music/Normal.mp3");
+      this.load.audio("music-normal", "assets/music/Normal.mp3");
     }
     if (!this.cache.audio.exists("music-letterend")) {
-      this.load.audio("music-letterend", "/assets/music/LetterEnd.mp3");
+      this.load.audio("music-letterend", "assets/music/LetterEnd.mp3");
     }
   }
 

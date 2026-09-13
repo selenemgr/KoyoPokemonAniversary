@@ -62,7 +62,7 @@ export default class BattleScene extends Phaser.Scene {
       if (!this.textures.exists(bk)) this.load.image(bk, backSpriteUrl(id));
     });
     if (!this.cache.audio.exists("music-battle")) {
-      this.load.audio("music-battle", "/assets/music/Battle.mp3");
+      this.load.audio("music-battle", "assets/music/Battle.mp3");
     }
   }
 

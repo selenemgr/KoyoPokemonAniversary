@@ -9,9 +9,9 @@ export default class StartScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("start-bg", "/assets/start-image/1.jpeg");
+    this.load.image("start-bg", "assets/start-image/1.jpeg");
     if (!this.cache.audio.exists("music-memories")) {
-      this.load.audio("music-memories", "/assets/music/Memories.mp3");
+      this.load.audio("music-memories", "assets/music/Memories.mp3");
     }
   }
 

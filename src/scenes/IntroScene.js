@@ -12,10 +12,10 @@ export default class IntroScene extends Phaser.Scene {
 
   preload() {
     if (!this.textures.exists("koyo-player")) {
-      this.load.image("koyo-player", "/assets/seyo/4-KoyoSprite.png");
+      this.load.image("koyo-player", "assets/seyo/4-KoyoSprite.png");
     }
     if (!this.cache.audio.exists("music-memories")) {
-      this.load.audio("music-memories", "/assets/music/Memories.mp3");
+      this.load.audio("music-memories", "assets/music/Memories.mp3");
     }
   }
 
